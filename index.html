@@ -1,4 +1,4 @@
-h<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@ h<!DOCTYPE html>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Interh:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -111,7 +111,7 @@ h<!DOCTYPE html>
             
             <!-- Badge (Category) -->
             <div class="inline-block bg-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-teal-200 mx-auto">
-                Logic Infrastructure for Research & Innovation
+                Research Logic Engine &nbsp;|&nbsp; Logic Infrastructure for Research & Innovation
             </div>
             
             <!-- Headline (Big Idea) -->
@@ -125,8 +125,8 @@ h<!DOCTYPE html>
             </p>
 
             <!-- Big Idea (One clean sentence) -->
-            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
-                Aveksana is the logic infrastructure layer that brings structural integrity to research — <span class="text-teal-700 font-bold">before funding, experiments, and papers begin.</span>
+            <p class="text-xl md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
+                Aveksana is the logic infrastructure layer for research, funding, and innovation — clarifying problems, defining scope, and validating contributions <span class="text-teal-700 font-bold">before funding, experiments, and papers begin.</span>
             </p>
             
             <!-- Slide Indicator -->
@@ -165,17 +165,17 @@ h<!DOCTYPE html>
             </div>
 
             <!-- Causal Chain (single horizontal row, pink background) -->
-            <div class="bg-red-50 border border-red-200 rounded-2xl p-6 md:p-8 mb-12 max-w-5xl mx-auto">
-                <div class="flex flex-wrap items-center justify-center gap-3 md:gap-4 text-sm md:text-base font-semibold">
-                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm">Bad Problem Framing</span>
-                    <span class="text-red-400 text-lg">&rarr;</span>
-                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm">Weak Proposal</span>
-                    <span class="text-red-400 text-lg">&rarr;</span>
-                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm">Rejected Funding</span>
-                    <span class="text-red-400 text-lg">&rarr;</span>
-                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm">Costly Project Rework</span>
-                    <span class="text-red-400 text-lg">&rarr;</span>
-                    <span class="bg-red-600 text-white px-4 py-2 rounded-lg shadow-md font-bold">Budget Waste</span>
+            <div class="bg-red-50 border border-red-200 rounded-2xl p-6 md:p-8 mb-12 max-w-6xl mx-auto overflow-x-auto">
+                <div class="flex flex-nowrap items-center justify-center gap-2 md:gap-3 text-sm md:text-base font-semibold min-w-max mx-auto">
+                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm whitespace-nowrap">Bad Problem Framing</span>
+                    <span class="text-red-400 text-lg flex-shrink-0">&rarr;</span>
+                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm whitespace-nowrap">Weak Proposal</span>
+                    <span class="text-red-400 text-lg flex-shrink-0">&rarr;</span>
+                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm whitespace-nowrap">Rejected Funding</span>
+                    <span class="text-red-400 text-lg flex-shrink-0">&rarr;</span>
+                    <span class="bg-white text-red-700 px-4 py-2 rounded-lg border border-red-200 shadow-sm whitespace-nowrap">Costly Project Rework</span>
+                    <span class="text-red-400 text-lg flex-shrink-0">&rarr;</span>
+                    <span class="bg-red-600 text-white px-4 py-2 rounded-lg shadow-md font-bold whitespace-nowrap">Budget Waste</span>
                 </div>
             </div>
 
@@ -276,53 +276,84 @@ h<!DOCTYPE html>
                 <h3 class="text-3xl md:text-4xl font-bold text-gray-800">The Logic of Inquiry</h3>
                 <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">We don't just search papers. We enforce a sequence of non-negotiable logical decisions.</p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Pillar 1 -->
-                <div class="stat-card p-6 rounded-xl flex flex-col h-full bg-white border border-stone-200">
-                    <div class="text-sm font-bold text-teal-600 mb-2 uppercase tracking-wider">Pillar 1</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Define</h4>
-                    <p class="text-xs font-semibold text-gray-500 mb-4 uppercase">Premise Selection</p>
-                    <p class="text-sm text-gray-600 mb-6 flex-grow">Move from a general topic to a specific problem. What exact logical gap justifies this research?</p>
-                    <div class="border-t border-gray-100 pt-3 mt-auto">
-                        <p class="text-xs text-teal-800 font-bold">Output:</p>
-                        <p class="text-xs text-gray-500">A clearly articulated problem statement grounded in literature.</p>
+            <!-- Pipeline -->
+            <div class="relative mt-16">
+                <!-- Connecting line (desktop only), sits behind the step bubbles -->
+                <div class="hidden lg:block absolute left-0 right-0 h-0.5 bg-gradient-to-r from-teal-200 via-teal-500 to-teal-700 pointer-events-none" style="top: 20px;"></div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Step 1 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-600 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">01</span>
+                        </div>
+                        <div class="bg-white border border-stone-200 rounded-xl p-6 w-full shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+                            <p class="text-xs font-bold text-teal-500 uppercase tracking-wider mb-2">Premise Selection</p>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Define</h4>
+                            <p class="text-sm text-gray-600 flex-grow">Move from a general topic to a specific problem. What exact logical gap justifies this research?</p>
+                            <div class="mt-4 pt-3 border-t border-gray-100">
+                                <p class="text-xs font-bold text-teal-700">Output</p>
+                                <p class="text-xs text-gray-500 mt-1">A clearly articulated problem statement grounded in literature.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-600 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">02</span>
+                        </div>
+                        <div class="bg-white border border-stone-200 rounded-xl p-6 w-full shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+                            <p class="text-xs font-bold text-teal-500 uppercase tracking-wider mb-2">Bounding & Scope</p>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Narrow</h4>
+                            <p class="text-sm text-gray-600 flex-grow">Make the research achievable. What constraints define where this study starts and ends?</p>
+                            <div class="mt-4 pt-3 border-t border-gray-100">
+                                <p class="text-xs font-bold text-teal-700">Output</p>
+                                <p class="text-xs text-gray-500 mt-1">A bounded scope aligned with time, data, and resources.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-600 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">03</span>
+                        </div>
+                        <div class="bg-white border border-stone-200 rounded-xl p-6 w-full shadow-sm hover:shadow-md transition-shadow flex flex-col h-full">
+                            <p class="text-xs font-bold text-teal-500 uppercase tracking-wider mb-2">The Contribution</p>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Identify</h4>
+                            <p class="text-sm text-gray-600 flex-grow">Crystallize why this work matters. What is the specific contribution relative to existing work?</p>
+                            <div class="mt-4 pt-3 border-t border-gray-100">
+                                <p class="text-xs font-bold text-teal-700">Output</p>
+                                <p class="text-xs text-gray-500 mt-1">A validated contribution statement that survives scrutiny.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-700 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">04</span>
+                        </div>
+                        <div class="bg-white border-2 border-teal-600 rounded-xl p-6 w-full shadow-md hover:shadow-lg transition-shadow flex flex-col h-full">
+                            <p class="text-xs font-bold text-teal-500 uppercase tracking-wider mb-2">Structural Integrity</p>
+                            <h4 class="text-xl font-bold text-gray-800 mb-3">Validate</h4>
+                            <p class="text-sm text-gray-600 flex-grow">Confirm the logic forms a defensible whole. Is it stable enough to support drafting?</p>
+                            <div class="mt-4 pt-3 border-t border-teal-100">
+                                <p class="text-xs font-bold text-teal-700">Output</p>
+                                <p class="text-xs text-gray-500 mt-1">A mentor-ready logic framework — blueprint for the manuscript.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Pillar 2 -->
-                 <div class="stat-card p-6 rounded-xl flex flex-col h-full bg-white border border-stone-200">
-                    <div class="text-sm font-bold text-teal-600 mb-2 uppercase tracking-wider">Pillar 2</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Narrow</h4>
-                    <p class="text-xs font-semibold text-gray-500 mb-4 uppercase">Bounding & Scope</p>
-                    <p class="text-sm text-gray-600 mb-6 flex-grow">Make the research achievable. What constraints define where this study starts and ends?</p>
-                    <div class="border-t border-gray-100 pt-3 mt-auto">
-                        <p class="text-xs text-teal-800 font-bold">Output:</p>
-                        <p class="text-xs text-gray-500">A bounded scope aligned with time, data, and resources.</p>
+                <!-- Endpoint: Writing -->
+                <div class="mt-8 flex items-center justify-center gap-4">
+                    <div class="hidden lg:block h-0.5 w-24 bg-gradient-to-r from-transparent to-teal-500"></div>
+                    <div class="bg-teal-600 text-white px-8 py-3 rounded-xl font-bold text-base shadow-lg tracking-wide">
+                        ✍️ &nbsp;Writing — Now Just Execution
                     </div>
-                </div>
-
-                <!-- Pillar 3 -->
-                 <div class="stat-card p-6 rounded-xl flex flex-col h-full bg-white border border-stone-200">
-                    <div class="text-sm font-bold text-teal-600 mb-2 uppercase tracking-wider">Pillar 3</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Identify</h4>
-                    <p class="text-xs font-semibold text-gray-500 mb-4 uppercase">The Contribution</p>
-                    <p class="text-sm text-gray-600 mb-6 flex-grow">Crystallize why this work matters. What is the specific contribution relative to existing work?</p>
-                    <div class="border-t border-gray-100 pt-3 mt-auto">
-                        <p class="text-xs text-teal-800 font-bold">Output:</p>
-                        <p class="text-xs text-gray-500">A validated contribution statement that survives scrutiny.</p>
-                    </div>
-                </div>
-
-                <!-- Pillar 4 -->
-                 <div class="stat-card p-6 rounded-xl flex flex-col h-full bg-white border border-stone-200">
-                    <div class="text-sm font-bold text-teal-600 mb-2 uppercase tracking-wider">Pillar 4</div>
-                    <h4 class="text-xl font-bold text-gray-800 mb-3">Validate</h4>
-                    <p class="text-xs font-semibold text-gray-500 mb-4 uppercase">Structural Integrity</p>
-                    <p class="text-sm text-gray-600 mb-6 flex-grow">Confirm the logic forms a defensible whole. Is it stable enough to support drafting?</p>
-                    <div class="border-t border-gray-100 pt-3 mt-auto">
-                        <p class="text-xs text-teal-800 font-bold">Output:</p>
-                        <p class="text-xs text-gray-500">A mentor-ready logic framework (Blueprint for the manuscript).</p>
-                    </div>
+                    <div class="hidden lg:block h-0.5 w-24 bg-gradient-to-l from-transparent to-teal-500"></div>
                 </div>
             </div>
         </section>
@@ -437,7 +468,7 @@ h<!DOCTYPE html>
                 <div class="traction-card p-8 rounded-xl text-center flex flex-col justify-between">
                     <div>
                         <h4 class="text-2xl font-bold text-teal-800 mb-4">Expert Validation</h4>
-                        <p class="text-5xl font-extrabold text-teal-700" data-counter-target="80000" data-prefix="€">0</fsp>
+                        <p class="text-5xl font-extrabold text-teal-700" data-counter-target="80000" data-prefix="€">0</p>
                         <p class="text-md text-gray-600 font-semibold">Confirmed Grant Funding</p>
                         <p class="text-sm text-gray-500">(from Business Finland, with an additional €200k in final approval)</p>
                     </div>
@@ -445,7 +476,97 @@ h<!DOCTYPE html>
             </div>
         </section>
 
-        <!-- 8. WALL OF LOVE -->
+        <!-- 8. INSTITUTIONAL PILOTS -->
+        <section id="pilots" class="mb-24 md:mb-32 scroll-mt-20">
+            <div class="text-center mb-12">
+                <div class="inline-block bg-teal-100 border border-teal-200 text-teal-700 px-4 py-1 rounded-full text-sm font-bold mb-4">
+                    Early Institutional Adoption
+                </div>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Institutional Pilots Converting into Revenue</h3>
+                <p class="mt-4 text-lg text-gray-600 max-w-4xl mx-auto">
+                    Aveksana is already being piloted by cities, universities, and startups to develop fundable research and innovation projects.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <!-- City Innovation Agencies -->
+                <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-blue-50 w-10 h-10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                            <span class="text-xl">🏛️</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-blue-600 uppercase tracking-wider">City Innovation</p>
+                            <h4 class="font-bold text-gray-800">Government Agencies</h4>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-blue-200 pl-4">
+                            <p class="font-semibold text-gray-800">Business Vantaa</p>
+                            <p class="text-sm text-gray-500 mt-1">Funding program development</p>
+                        </div>
+                        <div class="border-l-2 border-blue-200 pl-4">
+                            <p class="font-semibold text-gray-800">Business Tampere</p>
+                            <p class="text-sm text-gray-500 mt-1">Grant & innovation project development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Universities -->
+                <div class="bg-white border-t-4 border-teal-500 border border-stone-200 rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-teal-50 w-10 h-10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                            <span class="text-xl">🎓</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-teal-600 uppercase tracking-wider">Universities</p>
+                            <h4 class="font-bold text-gray-800">Academic Institutions</h4>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-teal-200 pl-4">
+                            <p class="font-semibold text-gray-800">University of Helsinki</p>
+                            <p class="text-sm text-gray-500 mt-1">Research project framing</p>
+                        </div>
+                        <div class="border-l-2 border-teal-200 pl-4">
+                            <p class="font-semibold text-gray-800">Metropolia UAS</p>
+                            <p class="text-sm text-gray-500 mt-1">Thesis & research structuring</p>
+                        </div>
+                        <div class="border-l-2 border-teal-200 pl-4">
+                            <p class="font-semibold text-gray-800">VAMK</p>
+                            <p class="text-sm text-gray-500 mt-1">Research development</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Startup -->
+                <div class="bg-white border border-stone-200 rounded-xl p-6 shadow-sm">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-purple-50 w-10 h-10 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                            <span class="text-xl">🚀</span>
+                        </div>
+                        <div>
+                            <p class="text-xs font-bold text-purple-600 uppercase tracking-wider">Startup</p>
+                            <h4 class="font-bold text-gray-800">Private Sector</h4>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="border-l-2 border-purple-200 pl-4">
+                            <p class="font-semibold text-gray-800">Taskhire</p>
+                            <p class="text-sm text-gray-500 mt-1">Funding applications</p>
+                            <span class="inline-block mt-2 bg-purple-50 text-purple-700 text-xs font-bold px-2 py-1 rounded-full">7% success fee model</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom signal -->
+            <div class="bg-teal-50 border border-teal-200 rounded-xl p-6 max-w-4xl mx-auto text-center">
+                <p class="text-gray-700 leading-relaxed">Government agencies, universities, and startups are already using Aveksana to develop <span class="font-bold text-teal-800">fundable research and innovation projects</span> — validating both the workflow and the emerging revenue model.</p>
+            </div>
+        </section>
+
+        <!-- 9. SOCIAL PROOF -->
         <section id="wall-of-love" class="mb-24 md:mb-32 scroll-mt-20">
             <div class="text-center mb-12">
                 <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Proof from the People We Built It For</h3>
@@ -509,30 +630,92 @@ h<!DOCTYPE html>
 
                 <!-- Part 1: The Data Flywheel -->
                 <div class="mb-24">
-                    <h4 class="text-xl font-bold text-teal-200 text-center mb-8 uppercase tracking-wider text-sm">The Data Flywheel</h4>
-                    <div class="flex flex-col md:flex-row justify-between items-center text-center space-y-6 md:space-y-0 relative">
-                        <div class="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-teal-700 -z-10 transform -translate-y-1/2"></div>
-                        <div class="bg-teal-800/80 backdrop-blur-sm p-6 rounded-xl border border-teal-700 w-full md:w-1/5 shadow-lg">
-                            <div class="text-3xl mb-2">👥</div>
-                            <p class="font-bold text-white">25k+ Users</p>
-                            <p class="text-xs text-teal-200 mt-1">Explore concepts visually</p>
+                    <h4 class="text-xl font-bold text-teal-200 text-center mb-4 uppercase tracking-wider text-sm">The Data Flywheel</h4>
+                    <p class="text-center text-teal-300 text-sm mb-10 opacity-80">Every user makes the engine smarter. The loop never stops.</p>
+
+                    <!-- Circular layout (desktop) -->
+                    <div class="hidden md:block relative mx-auto" style="width: 500px; height: 500px;">
+                        <svg class="absolute inset-0 w-full h-full" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <marker id="fw-arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+                                    <path d="M0,1 L7,4 L0,7 Z" fill="rgba(94,234,212,0.85)"/>
+                                </marker>
+                            </defs>
+                            <!-- Background ring -->
+                            <circle cx="250" cy="250" r="150" stroke="rgba(45,212,191,0.18)" stroke-width="2" stroke-dasharray="8 5"/>
+                            <!-- Clockwise arcs between nodes -->
+                            <path d="M 289,105 A 150,150 0 0,1 399,237" stroke="rgba(94,234,212,0.7)" stroke-width="2.5" fill="none" marker-end="url(#fw-arrow)"/>
+                            <path d="M 399,263 A 150,150 0 0,1 289,395" stroke="rgba(94,234,212,0.7)" stroke-width="2.5" fill="none" marker-end="url(#fw-arrow)"/>
+                            <path d="M 211,395 A 150,150 0 0,1 101,263" stroke="rgba(94,234,212,0.7)" stroke-width="2.5" fill="none" marker-end="url(#fw-arrow)"/>
+                            <path d="M 101,237 A 150,150 0 0,1 211,105" stroke="rgba(94,234,212,0.7)" stroke-width="2.5" fill="none" marker-end="url(#fw-arrow)"/>
+                        </svg>
+
+                        <!-- Center badge -->
+                        <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                            <div class="w-28 h-28 rounded-full bg-teal-800 border-2 border-teal-500/60 flex flex-col items-center justify-center text-center shadow-2xl">
+                                <span class="text-xl">♾️</span>
+                                <span class="text-white font-bold text-sm mt-1">Data Moat</span>
+                                <span class="text-teal-300 text-[10px] mt-0.5 uppercase tracking-wide">compounding</span>
+                            </div>
                         </div>
-                        <div class="text-2xl text-teal-400 font-bold hidden md:block">&rarr;</div>
-                        <div class="bg-teal-800/80 backdrop-blur-sm p-6 rounded-xl border border-teal-700 w-full md:w-1/5 shadow-lg">
-                            <div class="text-3xl mb-2">🔗</div>
-                            <p class="font-bold text-white">Unique Links</p>
-                            <p class="text-xs text-teal-200 mt-1">"Idea-to-Paper" connections captured</p>
+
+                        <!-- Top node: Users -->
+                        <div class="absolute" style="top:50px; left:50%; transform:translateX(-50%);">
+                            <div class="bg-teal-800/90 backdrop-blur-sm border border-teal-600 rounded-xl p-4 text-center w-36 shadow-lg">
+                                <div class="text-2xl mb-1">👥</div>
+                                <p class="font-bold text-white text-sm">25k+ Users</p>
+                                <p class="text-xs text-teal-200 mt-1">Explore research concepts</p>
+                            </div>
                         </div>
-                        <div class="text-2xl text-teal-400 font-bold hidden md:block">&rarr;</div>
-                        <div class="bg-teal-800/80 backdrop-blur-sm p-6 rounded-xl border border-teal-700 w-full md:w-1/5 shadow-lg">
-                            <div class="text-3xl mb-2">🧠</div>
-                            <p class="font-bold text-white">Model Trains</p>
+
+                        <!-- Right node: Unique Links -->
+                        <div class="absolute" style="top:50%; right:10px; transform:translateY(-50%);">
+                            <div class="bg-teal-800/90 backdrop-blur-sm border border-teal-600 rounded-xl p-4 text-center w-36 shadow-lg">
+                                <div class="text-2xl mb-1">🔗</div>
+                                <p class="font-bold text-white text-sm">Unique Links</p>
+                                <p class="text-xs text-teal-200 mt-1">Idea-to-Paper connections</p>
+                            </div>
+                        </div>
+
+                        <!-- Bottom node: Model Trains -->
+                        <div class="absolute" style="bottom:50px; left:50%; transform:translateX(-50%);">
+                            <div class="bg-teal-800/90 backdrop-blur-sm border border-teal-600 rounded-xl p-4 text-center w-36 shadow-lg">
+                                <div class="text-2xl mb-1">🧠</div>
+                                <p class="font-bold text-white text-sm">Model Trains</p>
+                                <p class="text-xs text-teal-200 mt-1">AI learns valid vs. invalid gaps</p>
+                            </div>
+                        </div>
+
+                        <!-- Left node: Better Insights -->
+                        <div class="absolute" style="top:50%; left:10px; transform:translateY(-50%);">
+                            <div class="bg-teal-800/90 backdrop-blur-sm border border-teal-600 rounded-xl p-4 text-center w-36 shadow-lg">
+                                <div class="text-2xl mb-1">💎</div>
+                                <p class="font-bold text-white text-sm">Better Insights</p>
+                                <p class="text-xs text-teal-200 mt-1">Attracts more users</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile fallback: 2×2 grid -->
+                    <div class="md:hidden grid grid-cols-2 gap-4">
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-4 text-center">
+                            <div class="text-2xl mb-1">👥</div>
+                            <p class="font-bold text-white text-sm">25k+ Users</p>
+                            <p class="text-xs text-teal-200 mt-1">Explore research concepts</p>
+                        </div>
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-4 text-center">
+                            <div class="text-2xl mb-1">🔗</div>
+                            <p class="font-bold text-white text-sm">Unique Links</p>
+                            <p class="text-xs text-teal-200 mt-1">Idea-to-Paper connections</p>
+                        </div>
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-4 text-center">
+                            <div class="text-2xl mb-1">🧠</div>
+                            <p class="font-bold text-white text-sm">Model Trains</p>
                             <p class="text-xs text-teal-200 mt-1">AI learns valid vs. invalid gaps</p>
                         </div>
-                        <div class="text-2xl text-teal-400 font-bold hidden md:block">&rarr;</div>
-                        <div class="bg-teal-800/80 backdrop-blur-sm p-6 rounded-xl border border-teal-700 w-full md:w-1/5 shadow-lg">
-                            <div class="text-3xl mb-2">💎</div>
-                            <p class="font-bold text-white">Better Insights</p>
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-4 text-center">
+                            <div class="text-2xl mb-1">💎</div>
+                            <p class="font-bold text-white text-sm">Better Insights</p>
                             <p class="text-xs text-teal-200 mt-1">Attracts more users</p>
                         </div>
                     </div>
@@ -589,40 +772,43 @@ h<!DOCTYPE html>
         <section id="market" class="mb-24 md:mb-32 scroll-mt-20">
             <div class="text-center mb-12">
                 <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Our Strategic Wedge</h3>
-                <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">We don't try to boil the ocean. We start with a high-velocity student beachhead to unlock the massive enterprise market.</p>
+                <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">Students build distribution and data. Artha monetizes institutions. The platform becomes infrastructure.</p>
             </div>
             <div class="grid md:grid-cols-3 gap-4 lg:gap-8">
                 <div class="market-card p-8 rounded-xl border-t-4 border-teal-500 relative h-full flex flex-col">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-teal-500 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">Phase 1</div>
-                    <h4 class="text-xl font-bold text-gray-800 mt-4 text-center">Beachhead (SOM)</h4>
+                    <h4 class="text-xl font-bold text-gray-800 mt-4 text-center">Beachhead (SOM) — Students</h4>
                     <p class="text-4xl font-extrabold text-teal-700 mt-2 text-center">€100M+</p>
-                    <p class="text-sm text-gray-500 text-center mb-6 font-semibold">Northern Europe & Global Students</p>
+                    <p class="text-sm text-gray-500 text-center mb-6 font-semibold">Distribution Wedge</p>
                     <ul class="space-y-3 text-sm text-gray-600 flex-grow">
                         <li class="flex items-start"><span class="text-teal-500 mr-2">&#9679;</span> <strong>Target:</strong> 200M+ university students.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#9679;</span> <strong>Strategy:</strong> Bottom-up viral adoption.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#9679;</span> <strong>Goal:</strong> Prove necessity + usage data.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#9679;</span> <strong>Role:</strong> Distribution + data generation.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#9679;</span> <strong>Strategy:</strong> Bottom-up viral adoption via Thesis Support.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#9679;</span> <strong>Goal:</strong> Make Aveksana the default research workflow for students.</li>
                     </ul>
                 </div>
                 <div class="market-card p-8 rounded-xl border-t-4 border-teal-700 relative h-full flex flex-col mt-8 md:mt-0">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-teal-700 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">Phase 2</div>
-                    <h4 class="text-xl font-bold text-gray-800 mt-4 text-center">Expansion (SAM)</h4>
-                    <p class="text-4xl font-extrabold text-teal-800 mt-2 text-center">€5-7B</p>
-                    <p class="text-sm text-gray-500 text-center mb-6 font-semibold">OECD Higher Ed & Corporate R&D</p>
+                    <h4 class="text-xl font-bold text-gray-800 mt-4 text-center">Expansion (SAM) — Universities, Startups, R&D Teams</h4>
+                    <p class="text-4xl font-extrabold text-teal-800 mt-2 text-center">€5–7B</p>
+                    <p class="text-sm text-gray-500 text-center mb-6 font-semibold">Revenue Wedge</p>
                     <ul class="space-y-3 text-sm text-gray-600 flex-grow">
-                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Target:</strong> 13M researchers + R&D teams.</li>
-                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Strategy:</strong> Convert high-usage universities into enterprise accounts.</li>
-                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Goal:</strong> Institutional standard.</li>
+                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Target:</strong> Universities, startups, R&D teams.</li>
+                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Entry Product:</strong> Artha (Funding Intelligence).</li>
+                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Strategy:</strong> Convert high-usage universities & funding teams into paying accounts.</li>
+                        <li class="flex items-start"><span class="text-teal-700 mr-2">&#9679;</span> <strong>Goal:</strong> Institutional adoption + recurring revenue.</li>
                     </ul>
                 </div>
                 <div class="market-card p-8 rounded-xl border-t-4 border-gray-800 relative h-full flex flex-col mt-8 md:mt-0 opacity-90">
                     <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wide">Phase 3</div>
-                    <h4 class="text-xl font-bold text-gray-800 mt-4 text-center">Global Standard (TAM)</h4>
-                    <p class="text-4xl font-extrabold text-gray-800 mt-2 text-center">€20B+</p>
-                    <p class="text-sm text-gray-500 text-center mb-6 font-semibold">Global Discovery Software</p>
-                    <ul class="space-y-3 text-sm text-gray-600 flex-grow">
-                        <li class="flex items-start"><span class="text-gray-800 mr-2">&#9679;</span> <strong>Target:</strong> €3.1T global R&D spend.</li>
-                        <li class="flex items-start"><span class="text-gray-800 mr-2">&#9679;</span> <strong>Strategy:</strong> The “OS for discovery”.</li>
-                        <li class="flex items-start"><span class="text-gray-800 mr-2">&#9679;</span> <strong>Note:</strong> 1% R&D waste reduction unlocks €31B.</li>
+                    <h4 class=”text-xl font-bold text-gray-800 mt-4 text-center”>Global Standard (TAM) — Research & Innovation Infrastructure</h4>
+                    <p class=”text-4xl font-extrabold text-gray-800 mt-2 text-center”>€20B+</p>
+                    <p class=”text-sm text-gray-500 text-center mb-6 font-semibold”>Platform Wedge</p>
+                    <ul class=”space-y-3 text-sm text-gray-600 flex-grow”>
+                        <li class=”flex items-start”><span class=”text-gray-800 mr-2”>&#9679;</span> <strong>Target:</strong> Global R&D organizations & funding bodies.</li>
+                        <li class=”flex items-start”><span class=”text-gray-800 mr-2”>&#9679;</span> <strong>Product:</strong> Aveksana Logic Infrastructure Platform.</li>
+                        <li class=”flex items-start”><span class=”text-gray-800 mr-2”>&#9679;</span> <strong>Strategy:</strong> Become the system of record for research & innovation decisions.</li>
+                        <li class=”flex items-start”><span class=”text-gray-800 mr-2”>&#9679;</span> <strong>Note:</strong> 1% R&D waste reduction unlocks €31B in value.</li>
                     </ul>
                 </div>
             </div>
@@ -632,10 +818,10 @@ h<!DOCTYPE html>
         <section id="business-model" class="mb-24 md:mb-32 scroll-mt-20">
              <div class="text-center mb-12">
                 <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Go-to-Market & Revenue Model</h3>
-                <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">We use a "Land & Expand" strategy: Individual adoption drives institutional sales.</p>
+                <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">Individuals create adoption. Universities create recurring revenue. Enterprise creates large contracts.</p>
                 <div class="mt-6 inline-flex items-center bg-teal-50 border border-teal-200 px-6 py-3 rounded-full">
                     <span class="text-teal-600 font-bold mr-2">The Flywheel:</span>
-                    <span class="text-gray-700 text-sm font-medium">Student usage → Data proof → Institutional license sale</span>
+                    <span class="text-gray-700 text-sm font-medium">Students adopt → Researchers use → Universities license → R&D teams expand → Data moat</span>
                 </div>
             </div>
              <div class="grid md:grid-cols-3 gap-8 text-center">
@@ -644,12 +830,12 @@ h<!DOCTYPE html>
                         <span class="text-3xl">👤</span>
                     </div>
                     <h4 class="text-xl font-bold text-gray-800">Individual (B2C)</h4>
-                    <p class="text-sm text-gray-500 font-semibold mb-2">Bottom-Up Engine</p>
+                    <p class="text-sm text-gray-500 font-semibold mb-2">Acquisition Engine</p>
                     <p class="text-3xl font-extrabold text-teal-700 mt-1">€19.90<span class="text-base font-normal text-gray-500">/mo</span></p>
                     <ul class="space-y-3 text-sm text-gray-600 text-left flex-grow mt-6">
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Role:</strong> Viral adoption.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Customer:</strong> Students / Researchers.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Benefit:</strong> Creates internal pull for university & enterprise licenses.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Role:</strong> Distribution, data generation & habit formation.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Customer:</strong> Students & researchers.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Benefit:</strong> Creates bottom-up pull inside universities — future enterprise users.</li>
                     </ul>
                 </div>
                 <div class="model-card p-8 rounded-xl border-2 border-teal-600 relative flex flex-col h-full transform md:-translate-y-2 shadow-xl">
@@ -658,24 +844,24 @@ h<!DOCTYPE html>
                         <span class="text-3xl">🏛️</span>
                     </div>
                     <h4 class="text-xl font-bold text-gray-800">Academic Licenses</h4>
-                    <p class="text-3xl font-extrabold text-teal-700 mt-3">€10-50k<span class="text-base font-normal text-gray-500">/yr</span></p>
+                    <p class="text-3xl font-extrabold text-teal-700 mt-3">€10–50k<span class="text-base font-normal text-gray-500">/yr</span></p>
                     <ul class="space-y-3 text-sm text-gray-600 text-left flex-grow mt-6">
-                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10004;</span> <strong>Role:</strong> High-LTV recurring revenue.</li>
-                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10004;</span> <strong>Customer:</strong> Libraries / Faculties.</li>
-                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10004;</span> <strong>Benefit:</strong> Sold using activation + usage data.</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10004;</span> <strong>Role:</strong> Predictable, recurring SaaS revenue.</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10004;</span> <strong>Customer:</strong> Libraries, faculties & research departments.</li>
+                        <li class="flex items-start"><span class="text-teal-600 mr-2">&#10004;</span> <strong>Sales motion:</strong> Students use → professors notice → department wants it → university buys license.</li>
                     </ul>
                 </div>
                 <div class="model-card p-8 rounded-xl flex flex-col h-full">
                     <div class="bg-gray-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                         <span class="text-3xl">🏢</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">R&D & Deep Tech</h4>
-                    <p class="text-sm text-gray-500 font-semibold mb-2">High-Value Upsell</p>
+                    <h4 class="text-xl font-bold text-gray-800">R&D & Enterprise</h4>
+                    <p class="text-sm text-gray-500 font-semibold mb-2">High-Value Contracts</p>
                     <p class="text-3xl font-extrabold text-teal-700 mt-1">Custom</p>
                     <ul class="space-y-3 text-sm text-gray-600 text-left flex-grow mt-6">
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Role:</strong> High-margin expansion.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Customer:</strong> Founders, BioTech & Enterprise Labs.</li>
-                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Benefit:</strong> Logic validation for high-risk ventures & private deployments.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Role:</strong> Large contracts + success-fee revenue.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Customer:</strong> Startups, cities, biotech & corporate R&D labs.</li>
+                        <li class="flex items-start"><span class="text-teal-500 mr-2">&#10004;</span> <strong>Models:</strong> Enterprise SaaS, % of funding secured, private deployments.</li>
                     </ul>
                 </div>
             </div>
@@ -694,7 +880,7 @@ h<!DOCTYPE html>
                     <div class="bg-teal-50 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                         <span class="text-2xl">🛡️</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">The "Hallucination" Crisis</h4>
+                    <h4 class="text-xl font-bold text-gray-800">Trust & Integrity Crisis in AI</h4>
                     <p class="mt-3 text-gray-600 leading-relaxed flex-grow">
                         Universities are banning generalist LLMs due to fake citations. They are desperately seeking a <strong>grounded, citation-backed</strong> AI infrastructure to ensure academic integrity.
                     </p>
@@ -703,7 +889,7 @@ h<!DOCTYPE html>
                     <div class="bg-teal-50 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                         <span class="text-2xl">📉</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">The Efficiency Squeeze</h4>
+                    <h4 class="text-xl font-bold text-gray-800">R&D Productivity Crisis</h4>
                     <p class="mt-3 text-gray-600 leading-relaxed flex-grow">
                         R&D inflation is outpacing budgets. Labs can no longer afford to pay PhDs for 20 hours/week of manual searching. Efficiency tools have shifted from "nice-to-have" to <strong>mandatory</strong>.
                     </p>
@@ -712,7 +898,7 @@ h<!DOCTYPE html>
                     <div class="bg-teal-50 w-14 h-14 rounded-full flex items-center justify-center mb-6">
                         <span class="text-2xl">🌊</span>
                     </div>
-                    <h4 class="text-xl font-bold text-gray-800">The Publication Flood</h4>
+                    <h4 class="text-xl font-bold text-gray-800">Research Scale Explosion</h4>
                     <p class="mt-3 text-gray-600 leading-relaxed flex-grow">
                         Global research output now doubles every 9 years. The era of "manual review" is mathematically over. An <strong>AI-first discovery engine</strong> is the inevitable new standard.
                     </p>
@@ -934,7 +1120,7 @@ h<!DOCTYPE html>
                 <!-- Branding & Legal -->
                 <div>
                     <span class="text-xl font-bold text-teal-700">Aveksana</span>
-                    <p class="text-sm text-gray-500 mt-2">&copy; 2025 Aveksana. Confidential Seed Deck.</p>
+                    <p class="text-sm text-gray-500 mt-2">&copy; 2026 Aveksana. Confidential Seed Deck.</p>
                 </div>
                 
                 <!-- Contact Info -->
