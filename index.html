@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Interh:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -109,29 +109,33 @@
         <section id="hero" class="text-center mb-24 md:mb-32 relative min-h-[60vh] flex flex-col justify-center">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-b from-teal-50 via-transparent to-transparent rounded-full blur-3xl -z-10 opacity-60"></div>
             
-            <!-- Badge -->
+            <!-- Badge (Category) -->
             <div class="inline-block bg-teal-100 text-teal-800 px-4 py-1.5 rounded-full text-sm font-semibold mb-8 border border-teal-200 mx-auto">
-                🚀 The Research Logic Engine
+                Logic Infrastructure for Research & Innovation
             </div>
             
-            <!-- Headline -->
+            <!-- Headline (Big Idea) -->
             <h1 class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight tracking-tight mb-8">
                 Engineering Structural Integrity into <br class="hidden md:block">Early-Stage Research
             </h1>
             
-            <!-- Subhead -->
-            <p class="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-                Most research fails before writing begins. <br class="hidden md:block">
-                Aveksana provides the logic infrastructure to <span class="text-teal-700 font-bold">clarify problems, define scope, and validate contributions</span>, ensuring direction is defensible.
+            <!-- Insight (The most important line) -->
+            <p class="text-xl md:text-2xl text-gray-500 max-w-3xl mx-auto leading-relaxed mb-6">
+                Most research fails before writing begins.
             </p>
 
+            <!-- Big Idea (One clean sentence) -->
+            <p class="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed font-medium">
+                Aveksana is the logic infrastructure layer that brings structural integrity to research — <span class="text-teal-700 font-bold">before funding, experiments, and papers begin.</span>
+            </p>
+            
             <!-- Slide Indicator -->
             <div class="mt-16 animate-bounce text-teal-600">
                 <svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
                 </svg>
             </div>
-
+            
             <!-- Social Proof -->
             <div class="mt-12 pt-8 flex flex-col items-center opacity-60">
                 <div class="flex flex-wrap justify-center gap-8 grayscale hover:grayscale-0 transition-all duration-500 text-center items-center">
@@ -154,100 +158,116 @@
                 <div class="inline-block bg-red-100 border border-red-200 text-red-700 px-4 py-1 rounded-full text-sm font-bold mb-4">
                     The Integrity Gap
                 </div>
-                <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Research Fails When Logic is Weak.</h3>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800">The Earliest Decisions Are the Most Expensive.</h3>
                 <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">
-                    Before a single experiment runs, researchers are stuck in an unstructured void that drains time and integrity.
+                    Before a single experiment runs, the wrong problem is chosen — and institutions absorb the full cost in budget, time, and failed funding.
                 </p>
             </div>
+
+            <!-- Causal Chain (The core economic argument) -->
+            <div class="bg-white border border-stone-200 rounded-xl p-6 md:p-8 mb-12 max-w-4xl mx-auto shadow-sm">
+                <p class="text-center text-sm font-bold text-gray-500 uppercase tracking-wider mb-4">The Failure Chain</p>
+                <div class="flex flex-wrap items-center justify-center gap-2 md:gap-3 text-sm md:text-base font-semibold text-gray-700">
+                    <span class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg border border-red-200">Bad Problem Framing</span>
+                    <span class="text-red-300">&rarr;</span>
+                    <span class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg border border-red-200">Weak Proposal</span>
+                    <span class="text-red-300">&rarr;</span>
+                    <span class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg border border-red-200">Rejected Funding</span>
+                    <span class="text-red-300">&rarr;</span>
+                    <span class="bg-red-50 text-red-700 px-3 py-1.5 rounded-lg border border-red-200">Costly Rework</span>
+                    <span class="text-red-300">&rarr;</span>
+                    <span class="bg-red-100 text-red-800 px-3 py-1.5 rounded-lg border border-red-300 font-extrabold">Budget Waste</span>
+                </div>
+            </div>
+
             <div class="grid md:grid-cols-3 gap-8 mb-12">
-                <!-- Card 1 -->
+                <!-- Card 1: Direct Budget Cost -->
                 <div class="stat-card p-6 rounded-xl text-center flex flex-col justify-between h-full">
                     <img src="https://placehold.co/100x100/fee2e2/ef4444?text=Burn" alt="Money Burning Icon" class="w-16 h-16 mx-auto mb-4 rounded-full">
                     <div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">The Cash Burn</h4>
                         <p class="text-4xl lg:text-5xl font-extrabold text-teal-700" data-counter-target="238000" data-prefix="$" data-suffix="k+">0</p>
                         <p class="mt-2 text-sm text-gray-600 font-medium">Invested Per Researcher / Year</p>
-                        <p class="mt-3 text-sm text-gray-500">Institutions pay for innovation, but lose budget on unstructured "hunt-and-peck" loops.</p>
+                        <p class="mt-3 text-sm text-gray-500">Institutions invest heavily per researcher, yet the most critical decisions happen without structure.</p>
                     </div>
                 </div>
-                <!-- Card 2 -->
+                <!-- Card 2: Salary Cost -->
                 <div class="stat-card p-6 rounded-xl text-center flex flex-col justify-between border-2 border-teal-600 h-full">
                     <img src="https://placehold.co/100x100/f3f4f6/374151?text=Chaos" alt="Messy Papers Icon" class="w-16 h-16 mx-auto mb-4 rounded-full">
                     <div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">The Manual Grind</h4>
                         <p class="text-4xl lg:text-5xl font-extrabold text-teal-700" data-counter-target="15" data-suffix="+">0</p>
                         <p class="mt-2 text-sm text-gray-600 font-medium">Hours Wasted Weekly</p>
-                        <p class="mt-3 text-sm text-gray-500">That’s two full workdays lost to manual filtering instead of logical reasoning.</p>
+                        <p class="mt-3 text-sm text-gray-500">Two full workdays per week lost to unstructured searching instead of logical reasoning.</p>
                     </div>
                 </div>
-                <!-- Card 3 -->
+                <!-- Card 3: Opportunity Cost -->
                 <div class="stat-card p-6 rounded-xl text-center flex flex-col justify-between h-full">
                     <img src="https://placehold.co/100x100/fee2e2/991b1b?text=Trap" alt="Trap Icon" class="w-16 h-16 mx-auto mb-4 rounded-full">
                     <div>
                         <h4 class="text-xl font-bold text-gray-800 mb-2">The Writing Trap</h4>
                         <p class="text-4xl lg:text-5xl font-extrabold text-teal-700">Scope</p>
                         <p class="mt-2 text-sm text-gray-600 font-medium">Creep & Collapse</p>
-                        <p class="mt-3 text-sm text-gray-500">Premature drafting without structural framing leads to weak proposals and major rework cycles.</p>
+                        <p class="mt-3 text-sm text-gray-500">Premature drafting without structural framing leads to weak proposals and failed funding cycles.</p>
                     </div>
                 </div>
             </div>
             <p class="text-center text-lg text-gray-700 max-w-4xl mx-auto italic mb-12">"We are paying PhDs to do the work of data clerks."</p>
         </section>
-        
+
         <!-- 3. SOLUTION -->
         <section id="solution" class="mb-24 md:mb-32 scroll-mt-20">
             <div class="text-center mb-12">
-                 <h4 class="text-3xl md:text-4xl font-bold text-gray-800">The Aveksana Logic Infrastructure</h4>
-                 <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">
-                    The structural engine for early-stage inquiry. Individual tools built on a shared methodology of structural framing, defining, and validating.
-                 </p>
+                <h4 class="text-3xl md:text-4xl font-bold text-gray-800">Not a Tool. A Logic Infrastructure Platform.</h4>
+                <p class="mt-3 text-lg text-gray-600 max-w-4xl mx-auto">
+                    Aveksana’s long-term position: <span class="text-teal-700 font-bold">the system of record for research decisions.</span>
+                </p>
             </div>
-            
-            <div class="bg-white border border-stone-200 rounded-xl shadow-lg overflow-hidden">
-                <!-- Top Layer -->
-                <div class="bg-teal-700 p-6 text-center text-white">
-                    <h5 class="text-2xl font-bold tracking-wide">THE SHARED ENGINE</h5>
-                    <p class="opacity-90">Core Structural Framing • Defining • Validating Logic</p>
+
+            <!-- The Engine -->
+            <div class="bg-white border border-stone-200 rounded-xl shadow-lg overflow-hidden mb-12">
+                <!-- Top Layer: Engine Description -->
+                <div class="bg-teal-700 p-6 md:p-8 text-center text-white">
+                    <h5 class="text-2xl font-bold tracking-wide mb-2">THE RESEARCH LOGIC ENGINE</h5>
+                    <p class="opacity-90 max-w-3xl mx-auto">A knowledge graph + structured reasoning model that maps problems, assumptions, methods, and contributions. Every project built on Aveksana strengthens the engine — creating a proprietary logic graph that competitors cannot replicate.</p>
                 </div>
-                
-                <!-- Bottom Layer -->
-                <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-stone-200">
-                    <!-- App 1: Artha -->
-                    <div class="p-8 hover:bg-stone-50 transition-colors h-full">
-                        <div class="text-teal-700 font-bold uppercase text-xs mb-2">Researchers & PIs</div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Artha</h4>
-                        <p class="text-sm text-gray-600 mb-6 min-h-[60px]">Surfaces underlying cognitive gaps in existing research to help PIs articulate a unique, fundable contribution.</p>
-                        <ul class="text-sm space-y-2 text-gray-700">
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Synthesis mapping for interdisciplinary grants</li>
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Cognitive gap identification in vast literature</li>
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Structured premise generation for journals</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- App 2: Thesis Support -->
-                    <div class="p-8 hover:bg-stone-50 transition-colors border-t-4 border-teal-500 relative h-full">
-                        <div class="text-teal-700 font-bold uppercase text-xs mb-2">Students & Mentors</div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">Thesis Support</h4>
-                        <p class="text-sm text-gray-600 mb-6 min-h-[60px]">Bridges the 'ambiguity gap'. Forces students to justify structural decisions before writing.</p>
-                        <ul class="text-sm space-y-2 text-gray-700">
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Standardized framing milestones</li>
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Supervisor-ready project briefs</li>
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Scope-creep detection</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- App 3: R&D Portal -->
-                    <div class="p-8 hover:bg-stone-50 transition-colors h-full">
-                        <div class="text-teal-700 font-bold uppercase text-xs mb-2">Deep Tech & R&D Labs</div>
-                        <h4 class="text-2xl font-bold text-gray-800 mb-4">R&D Portal</h4>
-                        <p class="text-sm text-gray-600 mb-6 min-h-[60px]">Captures underlying R&D logic to ensure project briefs are technically robust.</p>
-                        <ul class="text-sm space-y-2 text-gray-700">
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Conviction-building for ventures</li>
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Institutional knowledge capture</li>
-                            <li class="flex items-start"><span class="text-teal-600 mr-2">&#10003;</span> Technical alignment</li>
-                        </ul>
+
+                <!-- Wedge -> Expand -> Enterprise -->
+                <div class="p-6 md:p-8">
+                    <p class="text-center text-sm font-bold text-gray-500 uppercase tracking-wider mb-6">Wedge → Distribution → Enterprise</p>
+                    <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-stone-200">
+                        <!-- Stage 1: Artha (Wedge) -->
+                        <div class="p-6 hover:bg-stone-50 transition-colors h-full">
+                            <div class="inline-block bg-teal-100 text-teal-800 text-xs font-bold px-2 py-1 rounded-full mb-3">PHASE 1 — WEDGE</div>
+                            <div class="text-teal-700 font-bold uppercase text-xs mb-2">Researchers & PIs</div>
+                            <h4 class="text-2xl font-bold text-gray-800 mb-4">Artha</h4>
+                            <p class="text-sm text-gray-600 mb-4">Funding intelligence. Surfaces cognitive gaps in existing research to help PIs articulate a unique, fundable contribution.</p>
+                            <p class="text-xs text-gray-500 italic">Gets us in the door.</p>
+                        </div>
+                        <!-- Stage 2: Thesis (Distribution) -->
+                        <div class="p-6 hover:bg-stone-50 transition-colors border-t-4 border-teal-500 relative h-full">
+                            <div class="inline-block bg-teal-100 text-teal-800 text-xs font-bold px-2 py-1 rounded-full mb-3">PHASE 2 — DISTRIBUTION</div>
+                            <div class="text-teal-700 font-bold uppercase text-xs mb-2">Students & Mentors</div>
+                            <h4 class="text-2xl font-bold text-gray-800 mb-4">Thesis Support</h4>
+                            <p class="text-sm text-gray-600 mb-4">Research workflow layer. Forces students to justify structural decisions before writing, creating viral adoption across institutions.</p>
+                            <p class="text-xs text-gray-500 italic">Drives adoption at scale.</p>
+                        </div>
+                        <!-- Stage 3: R&D Portal (Enterprise) -->
+                        <div class="p-6 hover:bg-stone-50 transition-colors h-full">
+                            <div class="inline-block bg-teal-100 text-teal-800 text-xs font-bold px-2 py-1 rounded-full mb-3">PHASE 3 — ENTERPRISE</div>
+                            <div class="text-teal-700 font-bold uppercase text-xs mb-2">Deep Tech & R&D Labs</div>
+                            <h4 class="text-2xl font-bold text-gray-800 mb-4">R&D Portal</h4>
+                            <p class="text-sm text-gray-600 mb-4">R&D decision platform. Captures underlying R&D logic to ensure project briefs are technically robust and institutionally aligned.</p>
+                            <p class="text-xs text-gray-500 italic">Where the big revenue lives.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Data Moat -->
+            <div class="bg-teal-50 border border-teal-200 rounded-xl p-6 md:p-8 max-w-4xl mx-auto text-center">
+                <p class="text-sm font-bold text-teal-700 uppercase tracking-wider mb-2">The Data Moat</p>
+                <p class="text-gray-700 leading-relaxed">Every project built on Aveksana strengthens the logic engine with structured research decision data — creating a <span class="font-bold text-teal-800">proprietary graph that competitors cannot replicate.</span> This isn’t an AI wrapper. It’s a compounding data asset.</p>
             </div>
         </section>
 
@@ -534,7 +554,7 @@
                             <!-- The Grid Box -->
                             <div class="relative p-8 border-2 border-dashed border-teal-700/50 rounded-xl bg-teal-800/30 flex-grow">
                                 <div class="grid grid-cols-2 grid-rows-2 gap-4 h-96 w-full max-w-2xl">
-                                    <div class="border border-teal-700/30 rounded-lg p-4 bg-teal-900/50 flex flex-col justify-center items-center text-center opacity-60 hover:opacity-100 transition-opacity">
+                                    <div class="border border-teal-700/30 rounded-lhg p-4 bg-teal-900/50 flex flex-col justify-center items-center text-center opacity-60 hover:opacity-100 transition-opacity">
                                         <h5 class="font-bold text-white">General & Retrieval AI</h5>
                                         <p class="text-xs text-teal-300 mt-1">ChatGPT, Elicit, Scite</p>
                                         <p class="text-[10px] text-teal-400 mt-2 italic">"Good for answering known questions. Bad for defining new problems."</p>
