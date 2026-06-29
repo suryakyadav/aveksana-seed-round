@@ -488,9 +488,9 @@
                             </div>
                             <!-- Top-right: Aveksana -->
                             <div class="rounded-xl p-4 flex flex-col gap-2 border-2 shadow-lg" style="background-color: rgba(1,148,154,0.2); border-color: #49C3A3;">
-                                <p class="text-xs font-bold uppercase tracking-wide" style="color: #49C3A3;">Aveksana</p>
-                                <p class="text-xs text-white font-semibold">Validates the question.<br>Built for research.</p>
-                                <span class="text-xs font-bold italic" style="color: #49C3A3;">Research Logic Engine</span>
+                                <p class="text-xs font-bold uppercase tracking-wide" style="color: #49C3A3;">Research Logic Engine</p>
+                                <p class="text-xs text-white font-semibold">Aveksana</p>
+                                <p class="text-xs text-teal-200">Validates the question. Built for research.</p>
                             </div>
                             <!-- Bottom-left: Manual Search -->
                             <div class="rounded-xl border border-teal-700 p-4 flex flex-col gap-2" style="background-color: rgba(255,255,255,0.05);">
@@ -535,15 +535,16 @@
                             <p class="text-xs text-teal-300 mt-1">25k+ researchers mapped research directions nobody else owns</p>
                         </div>
                     </div>
-                    <!-- Side connectors: loop-back arrow on left, down arrow on right -->
-                    <div class="flex items-stretch px-6">
+                    <!-- Side connectors: up arrow on left (bottom), down arrow on right (top) -->
+                    <div class="flex items-stretch px-6" style="min-height: 60px;">
                         <div class="flex flex-col items-center" style="width: 60px;">
-                            <div class="flex-1 w-px border-l-2 border-dashed border-teal-600"></div>
+                            <div class="flex-1 w-px bg-teal-600"></div>
+                            <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 0 L16 10 L11 10 L11 28 L5 28 L5 10 L0 10 Z" fill="#49C3A3"/></svg>
                         </div>
                         <div class="flex-1"></div>
                         <div class="flex flex-col items-center" style="width: 60px;">
                             <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 28 L0 18 L5 18 L5 0 L11 0 L11 18 L16 18 Z" fill="#49C3A3"/></svg>
-                            <div class="flex-1 w-px border-l-2 border-teal-600"></div>
+                            <div class="flex-1 w-px bg-teal-600"></div>
                         </div>
                     </div>
                     <!-- Bottom row: cards 4 ← 3 -->
@@ -559,14 +560,6 @@
                             <p class="font-bold text-white text-sm">Engine Learns</p>
                             <p class="text-xs text-teal-300 mt-1">valid vs. invalid research gaps</p>
                         </div>
-                    </div>
-                    <!-- Loop-back arrow bottom-left up to top-left -->
-                    <div class="flex items-stretch px-6 mt-2">
-                        <div class="flex flex-col items-center" style="width: 60px;">
-                            <div class="flex-1 w-px border-l-2 border-dashed border-teal-600"></div>
-                            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 L16 10 L11 10 L11 16 L5 16 L5 10 L0 10 Z" fill="#49C3A3" opacity="0.4"/></svg>
-                        </div>
-                        <div class="flex-1"></div>
                     </div>
                 </div>
 
