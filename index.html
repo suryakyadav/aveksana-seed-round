@@ -490,7 +490,7 @@
                             <div class="rounded-xl p-4 flex flex-col gap-2 border-2 shadow-lg" style="background-color: rgba(1,148,154,0.2); border-color: #49C3A3;">
                                 <p class="text-xs font-bold uppercase tracking-wide" style="color: #49C3A3;">Aveksana</p>
                                 <p class="text-xs text-white font-semibold">Validates the question.<br>Built for research.</p>
-                                <span class="inline-block bg-teal-500 text-white text-xs font-bold px-2 py-0.5 rounded-full w-fit">Only one here</span>
+                                <span class="text-xs font-bold italic" style="color: #49C3A3;">Research Logic Engine</span>
                             </div>
                             <!-- Bottom-left: Manual Search -->
                             <div class="rounded-xl border border-teal-700 p-4 flex flex-col gap-2" style="background-color: rgba(255,255,255,0.05);">
@@ -498,10 +498,10 @@
                                 <p class="text-xs text-teal-300">Google Scholar · Library DBs</p>
                                 <p class="text-xs text-teal-600">No validation. Time-intensive.</p>
                             </div>
-                            <!-- Bottom-right: Reference Tools -->
+                            <!-- Bottom-right: Literature & Reference Tools -->
                             <div class="rounded-xl border border-teal-700 p-4 flex flex-col gap-2" style="background-color: rgba(255,255,255,0.05);">
-                                <p class="text-xs font-bold text-teal-400 uppercase tracking-wide">Reference Tools</p>
-                                <p class="text-xs text-teal-300">Elsevier · Clarivate · EndNote</p>
+                                <p class="text-xs font-bold text-teal-400 uppercase tracking-wide">Literature &amp; Reference Tools</p>
+                                <p class="text-xs text-teal-300">Elsevier · Clarivate · EndNote · Elicit · Consensus</p>
                                 <p class="text-xs text-teal-600">Indexes answers. Can't find gaps.</p>
                             </div>
                         </div>
@@ -519,26 +519,54 @@
                     <p class="text-white text-lg md:text-xl font-semibold leading-relaxed">What Google's DeepMind announced in 2025, <span style="color: #49C3A3;" class="font-extrabold">Aveksana solved in 2021.</span> 25,000 users. Governments. Corporations. <span class="font-bold text-white">The category is real, and it already has a leader.</span></p>
                 </div>
 
-                <div class="grid md:grid-cols-4 gap-6 max-w-4xl mx-auto mb-12">
-                    <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center">
-                        <div class="text-3xl mb-2">👥</div>
-                        <p class="font-bold text-white text-sm">25k+ Users</p>
-                        <p class="text-xs text-teal-300 mt-1">explore research problems</p>
+                <!-- Flywheel loop -->
+                <div class="max-w-4xl mx-auto mb-12">
+                    <!-- Top row: cards 1 → 2 -->
+                    <div class="flex items-center gap-2 mb-2">
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
+                            <div class="text-3xl mb-2">👥</div>
+                            <p class="font-bold text-white text-sm">25k+ Users</p>
+                            <p class="text-xs text-teal-300 mt-1">explore research problems</p>
+                        </div>
+                        <svg class="flex-shrink-0" width="28" height="16" viewBox="0 0 28 16"><path d="M28 8 L18 0 L18 5 L0 5 L0 11 L18 11 L18 16 Z" fill="#49C3A3"/></svg>
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
+                            <div class="text-3xl mb-2">🔗</div>
+                            <p class="font-bold text-white text-sm">Unique Hunch Graph</p>
+                            <p class="text-xs text-teal-300 mt-1">25k+ researchers mapped research directions nobody else owns</p>
+                        </div>
                     </div>
-                    <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center">
-                        <div class="text-3xl mb-2">🔗</div>
-                        <p class="font-bold text-white text-sm">Unique Hunch Graph</p>
-                        <p class="text-xs text-teal-300 mt-1">25k+ researchers mapped research directions nobody else owns</p>
+                    <!-- Side connectors: loop-back arrow on left, down arrow on right -->
+                    <div class="flex items-stretch px-6">
+                        <div class="flex flex-col items-center" style="width: 60px;">
+                            <div class="flex-1 w-px border-l-2 border-dashed border-teal-600"></div>
+                        </div>
+                        <div class="flex-1"></div>
+                        <div class="flex flex-col items-center" style="width: 60px;">
+                            <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 28 L0 18 L5 18 L5 0 L11 0 L11 18 L16 18 Z" fill="#49C3A3"/></svg>
+                            <div class="flex-1 w-px border-l-2 border-teal-600"></div>
+                        </div>
                     </div>
-                    <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center">
-                        <div class="text-3xl mb-2">🧠</div>
-                        <p class="font-bold text-white text-sm">Engine Learns</p>
-                        <p class="text-xs text-teal-300 mt-1">valid vs. invalid research gaps</p>
+                    <!-- Bottom row: cards 4 ← 3 -->
+                    <div class="flex items-center gap-2 mt-2">
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
+                            <div class="text-3xl mb-2">💎</div>
+                            <p class="font-bold text-white text-sm">Better Results</p>
+                            <p class="text-xs text-teal-300 mt-1">attract more users — loop continues</p>
+                        </div>
+                        <svg class="flex-shrink-0" width="28" height="16" viewBox="0 0 28 16"><path d="M0 8 L10 16 L10 11 L28 11 L28 5 L10 5 L10 0 Z" fill="#49C3A3"/></svg>
+                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
+                            <div class="text-3xl mb-2">🧠</div>
+                            <p class="font-bold text-white text-sm">Engine Learns</p>
+                            <p class="text-xs text-teal-300 mt-1">valid vs. invalid research gaps</p>
+                        </div>
                     </div>
-                    <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center">
-                        <div class="text-3xl mb-2">💎</div>
-                        <p class="font-bold text-white text-sm">Better Results</p>
-                        <p class="text-xs text-teal-300 mt-1">attract more users — loop continues</p>
+                    <!-- Loop-back arrow bottom-left up to top-left -->
+                    <div class="flex items-stretch px-6 mt-2">
+                        <div class="flex flex-col items-center" style="width: 60px;">
+                            <div class="flex-1 w-px border-l-2 border-dashed border-teal-600"></div>
+                            <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 0 L16 10 L11 10 L11 16 L5 16 L5 10 L0 10 Z" fill="#49C3A3" opacity="0.4"/></svg>
+                        </div>
+                        <div class="flex-1"></div>
                     </div>
                 </div>
 
