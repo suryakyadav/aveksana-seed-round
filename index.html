@@ -459,116 +459,210 @@
             </div>
         </section>
 
+        <!-- 5b. COMPETITIVE POSITIONING -->
+        <section class="mb-24 md:mb-32 scroll-mt-20">
+            <div class="text-center mb-10">
+                <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: #49C3A3;">Competitive Landscape</p>
+                <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Where Aveksana Sits</h3>
+            </div>
+
+            <!-- Scatter-plot 2x2 -->
+            <div class="max-w-2xl mx-auto mb-10" style="display: grid; grid-template-columns: 52px 1fr; grid-template-rows: 360px 44px;">
+
+                <!-- Y-axis -->
+                <div style="grid-column:1; grid-row:1; display:flex; flex-direction:column; align-items:center; padding-top:4px;">
+                    <svg width="10" height="12" viewBox="0 0 10 12"><path d="M5 0 L10 6 L7 6 L7 12 L3 12 L3 6 L0 6 Z" fill="#49C3A3"/></svg>
+                    <div style="flex:1; width:1px; background:#5eead4; opacity:0.5; margin:4px 0;"></div>
+                    <span class="text-xs font-bold uppercase tracking-widest" style="color:#49C3A3; writing-mode:vertical-rl; transform:rotate(180deg); letter-spacing:0.08em;">Validates the Question</span>
+                </div>
+
+                <!-- Grid -->
+                <div class="relative rounded-xl border border-stone-200 bg-stone-50" style="grid-column:2; grid-row:1; overflow:visible;">
+
+                    <!-- Quadrant dividers -->
+                    <div class="absolute" style="left:50%; top:0; bottom:0; width:1px; background:#ccfbf1;"></div>
+                    <div class="absolute" style="top:50%; left:0; right:0; height:1px; background:#ccfbf1;"></div>
+
+                    <!-- Top-right zone highlight -->
+                    <div class="absolute" style="left:50%; top:0; right:0; bottom:50%; background:rgba(73,195,163,0.07); border-radius:0 12px 0 0;"></div>
+
+                    <!-- Faint quadrant labels -->
+                    <span class="absolute text-xs font-semibold" style="color:rgba(73,195,163,0.35); top:10px; left:10px;">General</span>
+                    <span class="absolute text-xs font-semibold" style="color:rgba(73,195,163,0.35); bottom:10px; left:10px;">General</span>
+                    <span class="absolute text-xs font-semibold" style="color:rgba(73,195,163,0.35); bottom:10px; right:10px;">Research-Specific</span>
+
+                    <!-- DOT: Aveksana (86%, 9%) — top-right dominant -->
+                    <div class="absolute" style="left:86%; top:9%; transform:translate(-50%,-50%);">
+                        <div class="relative">
+                            <div class="absolute rounded-full" style="width:30px; height:30px; background:rgba(73,195,163,0.22); top:-7px; left:-7px;"></div>
+                            <div class="w-4 h-4 rounded-full shadow-md" style="background:#49C3A3; position:relative; z-index:1;"></div>
+                            <div class="absolute" style="right:calc(100% + 8px); top:50%; transform:translateY(-50%); text-align:right;">
+                                <p class="text-xs font-bold whitespace-nowrap" style="color:#0d9488;">Aveksana</p>
+                                <p class="text-xs text-gray-400 whitespace-nowrap">since 2021</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DOT: Google DeepMind (64%, 28%) — entering top-right -->
+                    <div class="absolute" style="left:64%; top:28%; transform:translate(-50%,-50%);">
+                        <div class="relative">
+                            <div class="w-3 h-3 rounded-full" style="background:#6b7280;"></div>
+                            <div class="absolute" style="right:calc(100% + 8px); top:50%; transform:translateY(-50%); text-align:right;">
+                                <p class="text-xs font-semibold text-gray-600 whitespace-nowrap">Google DeepMind</p>
+                                <p class="text-xs text-gray-400 whitespace-nowrap">2025 entry</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DOT: ChatGPT / Gemini / Perplexity (15%, 24%) — top-left -->
+                    <div class="absolute" style="left:15%; top:24%; transform:translate(-50%,-50%);">
+                        <div class="relative">
+                            <div class="w-3 h-3 rounded-full" style="background:#9ca3af;"></div>
+                            <div class="absolute" style="left:calc(100% + 8px); top:50%; transform:translateY(-50%);">
+                                <p class="text-xs text-gray-500 whitespace-nowrap">ChatGPT · Gemini · Perplexity</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DOT: Elsevier / Clarivate / Consensus (78%, 58%) — mid-right -->
+                    <div class="absolute" style="left:78%; top:58%; transform:translate(-50%,-50%);">
+                        <div class="relative">
+                            <div class="w-3 h-3 rounded-full" style="background:#9ca3af;"></div>
+                            <div class="absolute" style="right:calc(100% + 8px); top:50%; transform:translateY(-50%); text-align:right;">
+                                <p class="text-xs text-gray-500 whitespace-nowrap">Elsevier · Clarivate</p>
+                                <p class="text-xs text-gray-400 whitespace-nowrap">Elicit · Consensus</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DOT: Google Scholar (56%, 83%) — bottom-right -->
+                    <div class="absolute" style="left:56%; top:83%; transform:translate(-50%,-50%);">
+                        <div class="relative">
+                            <div class="w-2 h-2 rounded-full" style="background:#d1d5db;"></div>
+                            <div class="absolute" style="bottom:calc(100% + 4px); left:50%; transform:translateX(-50%);">
+                                <p class="text-xs text-gray-400 whitespace-nowrap">Google Scholar</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DOT: Manual Search / Library DBs (12%, 83%) — bottom-left -->
+                    <div class="absolute" style="left:12%; top:83%; transform:translate(-50%,-50%);">
+                        <div class="relative">
+                            <div class="w-2 h-2 rounded-full" style="background:#d1d5db;"></div>
+                            <div class="absolute" style="bottom:calc(100% + 4px); left:0;">
+                                <p class="text-xs text-gray-400 whitespace-nowrap">Library DBs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- X-axis -->
+                <div style="grid-column:2; grid-row:2; display:flex; align-items:center; gap:8px; padding-top:10px;">
+                    <div style="flex:1; height:1px; background:#5eead4; opacity:0.5;"></div>
+                    <span class="text-xs font-bold uppercase tracking-widest" style="color:#49C3A3; letter-spacing:0.08em;">Research-Specific</span>
+                    <svg width="12" height="10" viewBox="0 0 12 10"><path d="M12 5 L6 0 L6 3 L0 3 L0 7 L6 7 L6 10 Z" fill="#49C3A3"/></svg>
+                </div>
+
+                <!-- Empty corner -->
+                <div style="grid-column:1; grid-row:2;"></div>
+            </div>
+
+            <!-- Category claim banner -->
+            <div class="max-w-3xl mx-auto rounded-2xl px-8 py-6 text-center" style="background: linear-gradient(135deg, rgba(1,148,154,0.10) 0%, rgba(73,195,163,0.06) 100%); border: 1px solid rgba(73,195,163,0.35);">
+                <p class="text-gray-800 text-lg md:text-xl font-semibold leading-relaxed">What Google's DeepMind announced in 2025, <span style="color: #0d9488;" class="font-extrabold">Aveksana solved in 2021.</span> 25,000 users. Governments. Corporations. <span class="font-bold text-gray-900">The category is real, and it already has a leader.</span></p>
+            </div>
+        </section>
+
         <!-- 6. MOAT -->
         <section id="edge" class="mb-24 md:mb-32 scroll-mt-20 py-16 bg-teal-900 rounded-3xl text-white shadow-2xl relative overflow-hidden">
             <div class="absolute top-0 right-0 w-64 h-64 bg-teal-600 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -mr-16 -mt-16"></div>
             <div class="absolute bottom-0 left-0 w-64 h-64 bg-teal-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 -ml-16 -mb-16"></div>
             <div class="relative z-10 px-6 md:px-12">
+                <!-- Section header -->
                 <div class="text-center mb-12">
-                    <h3 class="text-3xl md:text-4xl font-bold text-white">This Isn't an AI Wrapper. It's a Compounding Data Asset.</h3>
-                    <p class="mt-4 text-lg text-teal-100 max-w-3xl mx-auto opacity-90">We've already indexed <strong class="text-white">500 million academic articles</strong> into a proprietary knowledge graph. Every researcher who uses Aveksana adds to it, making the engine smarter for the next one. That loop is not replicable.</p>
+                    <p class="text-xs font-bold uppercase tracking-widest mb-3" style="color: #49C3A3;">Defensible Moat</p>
+                    <h3 class="text-3xl md:text-4xl font-bold text-white leading-tight">Why We Win: Domain Intelligence + Embedded Workflow</h3>
+                    <p class="mt-4 text-base text-teal-200 max-w-2xl mx-auto opacity-90">Aveksana captures the reasoning that happens before publication — the part competitors cannot scrape, license, or reverse-engineer.</p>
                 </div>
 
-                <!-- Competitive 2x2 -->
-                <div class="max-w-2xl mx-auto mb-10 flex gap-3">
-                    <!-- Y-axis: line + arrow + label -->
-                    <div class="flex flex-col items-center flex-shrink-0" style="width: 24px;">
-                        <svg width="12" height="14" viewBox="0 0 12 14"><path d="M6 0 L12 7 L8 7 L8 14 L4 14 L4 7 L0 7 Z" fill="#49C3A3"/></svg>
-                        <div class="flex-1 w-px bg-teal-700 my-1"></div>
-                        <span class="text-xs font-bold uppercase tracking-widest" style="color: #49C3A3; writing-mode: vertical-rl; transform: rotate(180deg);">Validates the Question</span>
-                    </div>
-                    <!-- Grid + X-axis -->
-                    <div class="flex-1 flex flex-col gap-2">
-                        <div class="grid grid-cols-2 gap-2">
-                            <!-- Top-left: General AI -->
-                            <div class="rounded-xl border border-teal-700 p-4 flex flex-col gap-2" style="background-color: rgba(255,255,255,0.05);">
-                                <p class="text-xs font-bold text-teal-400 uppercase tracking-wide">General AI</p>
-                                <p class="text-xs text-teal-300">ChatGPT · Gemini · Perplexity</p>
-                                <p class="text-xs text-teal-600">Broad output. No research logic.</p>
-                            </div>
-                            <!-- Top-right: Aveksana -->
-                            <div class="rounded-xl p-4 flex flex-col gap-2 border-2 shadow-lg" style="background-color: rgba(1,148,154,0.2); border-color: #49C3A3;">
-                                <p class="text-xs font-bold uppercase tracking-wide" style="color: #49C3A3;">Research Logic Engine</p>
-                                <p class="text-xs text-white font-semibold">Aveksana</p>
-                                <p class="text-xs text-teal-200">Validates the question. Built for research.</p>
-                            </div>
-                            <!-- Bottom-left: Manual Search -->
-                            <div class="rounded-xl border border-teal-700 p-4 flex flex-col gap-2" style="background-color: rgba(255,255,255,0.05);">
-                                <p class="text-xs font-bold text-teal-400 uppercase tracking-wide">Manual Search</p>
-                                <p class="text-xs text-teal-300">Google Scholar · Library DBs</p>
-                                <p class="text-xs text-teal-600">No validation. Time-intensive.</p>
-                            </div>
-                            <!-- Bottom-right: Literature & Reference Tools -->
-                            <div class="rounded-xl border border-teal-700 p-4 flex flex-col gap-2" style="background-color: rgba(255,255,255,0.05);">
-                                <p class="text-xs font-bold text-teal-400 uppercase tracking-wide">Literature &amp; Reference Tools</p>
-                                <p class="text-xs text-teal-300">Elsevier · Clarivate · EndNote · Elicit · Consensus</p>
-                                <p class="text-xs text-teal-600">Indexes answers. Can't find gaps.</p>
-                            </div>
+                <!-- Flywheel -->
+                <div class="max-w-4xl mx-auto mb-10">
+                    <!-- Top row: card 1 → card 2 -->
+                    <div class="flex items-center gap-3 mb-0">
+                        <!-- Card 1 -->
+                        <div class="flex-1 rounded-2xl p-5 text-center border border-teal-700" style="background-color: rgba(255,255,255,0.06);">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-extrabold mx-auto mb-3" style="background-color: #49C3A3; color: #0d3d3b;">1</div>
+                            <p class="font-bold text-white text-sm mb-1">25k+ Researchers</p>
+                            <p class="text-xs text-teal-300 leading-snug">Explore problems, gaps, funding paths, and project directions.</p>
                         </div>
-                        <!-- X-axis -->
-                        <div class="flex items-center gap-2 mt-1">
-                            <div class="flex-1 h-px bg-teal-700"></div>
-                            <span class="text-xs font-bold uppercase tracking-widest" style="color: #49C3A3;">Research-Specific</span>
-                            <svg width="14" height="12" viewBox="0 0 14 12"><path d="M14 6 L7 0 L7 4 L0 4 L0 8 L7 8 L7 12 Z" fill="#49C3A3"/></svg>
+                        <!-- Arrow right -->
+                        <svg class="flex-shrink-0" width="28" height="14" viewBox="0 0 28 14"><path d="M28 7 L18 0 L18 5 L0 5 L0 9 L18 9 L18 14 Z" fill="#49C3A3"/></svg>
+                        <!-- Card 2 -->
+                        <div class="flex-1 rounded-2xl p-5 text-center border-2" style="background-color: rgba(1,148,154,0.18); border-color: #49C3A3;">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-extrabold mx-auto mb-3" style="background-color: #49C3A3; color: #0d3d3b;">2</div>
+                            <p class="font-bold text-white text-sm mb-1">Research Intelligence Graph</p>
+                            <p class="text-xs text-teal-200 leading-snug">Captures rejected ideas, validated gaps, scope decisions, funding logic, and supervisor feedback.</p>
                         </div>
                     </div>
-                </div>
 
-                <!-- Category claim banner -->
-                <div class="max-w-3xl mx-auto mb-10 rounded-2xl px-8 py-6 text-center" style="background: linear-gradient(135deg, rgba(1,148,154,0.25) 0%, rgba(73,195,163,0.15) 100%); border: 1px solid rgba(73,195,163,0.4);">
-                    <p class="text-white text-lg md:text-xl font-semibold leading-relaxed">What Google's DeepMind announced in 2025, <span style="color: #49C3A3;" class="font-extrabold">Aveksana solved in 2021.</span> 25,000 users. Governments. Corporations. <span class="font-bold text-white">The category is real, and it already has a leader.</span></p>
-                </div>
-
-                <!-- Flywheel loop -->
-                <div class="max-w-4xl mx-auto mb-12">
-                    <!-- Top row: cards 1 → 2 -->
-                    <div class="flex items-center gap-2 mb-2">
-                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
-                            <div class="text-3xl mb-2">👥</div>
-                            <p class="font-bold text-white text-sm">25k+ Users</p>
-                            <p class="text-xs text-teal-300 mt-1">explore research problems</p>
-                        </div>
-                        <svg class="flex-shrink-0" width="28" height="16" viewBox="0 0 28 16"><path d="M28 8 L18 0 L18 5 L0 5 L0 11 L18 11 L18 16 Z" fill="#49C3A3"/></svg>
-                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
-                            <div class="text-3xl mb-2">🔗</div>
-                            <p class="font-bold text-white text-sm">Unique Hunch Graph</p>
-                            <p class="text-xs text-teal-300 mt-1">25k+ researchers mapped research directions nobody else owns</p>
-                        </div>
-                    </div>
-                    <!-- Side connectors: up arrow on left (bottom), down arrow on right (top) -->
-                    <div class="flex items-stretch px-6" style="min-height: 60px;">
-                        <div class="flex flex-col items-center" style="width: 60px;">
+                    <!-- Side connectors -->
+                    <div class="flex items-stretch px-8" style="min-height: 52px;">
+                        <!-- Left: up arrow (loop back) -->
+                        <div class="flex flex-col items-center" style="width: 56px;">
                             <div class="flex-1 w-px bg-teal-600"></div>
-                            <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 0 L16 10 L11 10 L11 28 L5 28 L5 10 L0 10 Z" fill="#49C3A3"/></svg>
+                            <svg width="14" height="24" viewBox="0 0 14 24"><path d="M7 0 L14 9 L10 9 L10 24 L4 24 L4 9 L0 9 Z" fill="#49C3A3"/></svg>
                         </div>
                         <div class="flex-1"></div>
-                        <div class="flex flex-col items-center" style="width: 60px;">
-                            <svg width="16" height="28" viewBox="0 0 16 28"><path d="M8 28 L0 18 L5 18 L5 0 L11 0 L11 18 L16 18 Z" fill="#49C3A3"/></svg>
+                        <!-- Right: down arrow -->
+                        <div class="flex flex-col items-center" style="width: 56px;">
+                            <svg width="14" height="24" viewBox="0 0 14 24"><path d="M7 24 L0 15 L4 15 L4 0 L10 0 L10 15 L14 15 Z" fill="#49C3A3"/></svg>
                             <div class="flex-1 w-px bg-teal-600"></div>
                         </div>
                     </div>
-                    <!-- Bottom row: cards 4 ← 3 -->
-                    <div class="flex items-center gap-2 mt-2">
-                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
-                            <div class="text-3xl mb-2">💎</div>
-                            <p class="font-bold text-white text-sm">Better Results</p>
-                            <p class="text-xs text-teal-300 mt-1">attract more users — loop continues</p>
+
+                    <!-- Bottom row: card 4 ← card 3 -->
+                    <div class="flex items-center gap-3 mt-0">
+                        <!-- Card 4 -->
+                        <div class="flex-1 rounded-2xl p-5 text-center border border-teal-700" style="background-color: rgba(255,255,255,0.06);">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-extrabold mx-auto mb-3" style="background-color: #49C3A3; color: #0d3d3b;">4</div>
+                            <p class="font-bold text-white text-sm mb-1">Better Research Decisions</p>
+                            <p class="text-xs text-teal-300 leading-snug">Stronger proposals, clearer scope, better funding alignment, and higher-quality projects.</p>
                         </div>
-                        <svg class="flex-shrink-0" width="28" height="16" viewBox="0 0 28 16"><path d="M0 8 L10 16 L10 11 L28 11 L28 5 L10 5 L10 0 Z" fill="#49C3A3"/></svg>
-                        <div class="bg-teal-800/80 border border-teal-700 rounded-xl p-5 text-center flex-1">
-                            <div class="text-3xl mb-2">🧠</div>
-                            <p class="font-bold text-white text-sm">Engine Learns</p>
-                            <p class="text-xs text-teal-300 mt-1">valid vs. invalid research gaps</p>
+                        <!-- Arrow left -->
+                        <svg class="flex-shrink-0" width="28" height="14" viewBox="0 0 28 14"><path d="M0 7 L10 14 L10 9 L28 9 L28 5 L10 5 L10 0 Z" fill="#49C3A3"/></svg>
+                        <!-- Card 3 -->
+                        <div class="flex-1 rounded-2xl p-5 text-center border border-teal-700" style="background-color: rgba(255,255,255,0.06);">
+                            <div class="w-8 h-8 rounded-full flex items-center justify-center text-xs font-extrabold mx-auto mb-3" style="background-color: #49C3A3; color: #0d3d3b;">3</div>
+                            <p class="font-bold text-white text-sm mb-1">Reasoning Engine Improves</p>
+                            <p class="text-xs text-teal-300 leading-snug">Learns valid vs. invalid research decisions — not just language patterns.</p>
                         </div>
                     </div>
                 </div>
 
-                <p class="text-center text-teal-200 text-sm max-w-2xl mx-auto mb-8">Elsevier and Clarivate index what has been answered. They have no data on what researchers tried to ask but could not formulate. <strong class="text-white">That gap is what Aveksana owns. It cannot be scraped, licensed, or reverse-engineered.</strong></p>
+                <!-- Comparison statement -->
+                <p class="text-center text-teal-200 text-sm max-w-2xl mx-auto mb-10 leading-relaxed">
+                    Published research databases know what has already been answered.<br>
+                    <strong class="text-white">Aveksana captures what researchers tried to ask, rejected, refined, and validated before publication.</strong>
+                </p>
+
+                <!-- Two moat cards -->
+                <div class="grid md:grid-cols-2 gap-5 max-w-3xl mx-auto mb-10">
+                    <div class="rounded-2xl p-6 border border-teal-700" style="background-color: rgba(255,255,255,0.05);">
+                        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color: #49C3A3;">Moat 1</p>
+                        <h4 class="font-bold text-white text-base mb-2">Compounding Proprietary Data</h4>
+                        <p class="text-sm text-teal-200 leading-relaxed">Every project strengthens Aveksana's research intelligence graph with structured decision data competitors cannot access.</p>
+                    </div>
+                    <div class="rounded-2xl p-6 border border-teal-700" style="background-color: rgba(255,255,255,0.05);">
+                        <p class="text-xs font-bold uppercase tracking-widest mb-2" style="color: #49C3A3;">Moat 2</p>
+                        <h4 class="font-bold text-white text-base mb-2">Embedded Research Workflow</h4>
+                        <p class="text-sm text-teal-200 leading-relaxed">Aveksana becomes part of how research is defined, supervised, validated, funded, and executed.</p>
+                    </div>
+                </div>
 
                 <!-- Validated chip -->
                 <div class="flex justify-center">
                     <div class="bg-teal-800 border border-teal-600 rounded-xl px-6 py-4 flex items-center gap-4 max-w-lg">
-                        <span class="bg-teal-500 text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wide flex-shrink-0">Validated</span>
+                        <span class="text-white text-xs font-extrabold px-3 py-1 rounded-full uppercase tracking-wide flex-shrink-0" style="background-color: #49C3A3;">Validated</span>
                         <p class="text-teal-100 text-sm"><strong class="text-white">Škoda X R&D team:</strong> Artha outperformed all other tools they had used previously.</p>
                     </div>
                 </div>
