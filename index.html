@@ -481,6 +481,25 @@
                 <h3 class="text-3xl md:text-4xl font-bold text-gray-800">Where Aveksana Sits</h3>
             </div>
 
+            <!-- Category framing: three ways to answer "what should I research?" -->
+            <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-14">
+                <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
+                    <p class="text-xs font-bold text-teal-600 uppercase tracking-widest mb-3">Search & Evidence</p>
+                    <h4 class="font-bold text-gray-800 mb-4 flex-grow">Find papers, citations and prior evidence.</h4>
+                    <p class="text-sm text-gray-400 italic border-t border-stone-200 pt-3">What exists?</p>
+                </div>
+                <div class="bg-white border border-stone-200 rounded-2xl p-6 flex flex-col">
+                    <p class="text-xs font-bold text-teal-600 uppercase tracking-widest mb-3">General AI</p>
+                    <h4 class="font-bold text-gray-800 mb-4 flex-grow">Generate, summarize and synthesize text.</h4>
+                    <p class="text-sm text-gray-400 italic border-t border-stone-200 pt-3">What could I write?</p>
+                </div>
+                <div class="bg-teal-800 rounded-2xl p-6 flex flex-col">
+                    <p class="text-xs font-bold text-teal-300 uppercase tracking-widest mb-3">Aveksana</p>
+                    <h4 class="font-bold text-white mb-4 flex-grow">Test the question's scope, novelty, relevance, feasibility and logic.</h4>
+                    <p class="text-sm text-teal-200 italic border-t border-teal-700 pt-3">What is worth researching?</p>
+                </div>
+            </div>
+
             <!-- Scatter-plot 2x2 -->
             <div class="max-w-2xl mx-auto mb-10" style="display: grid; grid-template-columns: 52px 1fr; grid-template-rows: 360px 44px;">
 
@@ -851,11 +870,55 @@
             <div class="text-center mb-4">
                 <h3 class="text-3xl md:text-4xl font-bold text-gray-800">We Lived This Problem.</h3>
             </div>
-            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8">Three founders at the intersection of research, AI, and product. Each of us felt the friction firsthand. That's why the product is real and the users came without us asking.</p>
+            <p class="text-center text-lg text-gray-600 max-w-3xl mx-auto mb-8">We did not discover this problem in a market map. We studied it, published through it, built for it and sold into it.</p>
             <div class="flex flex-wrap justify-center gap-4 mb-12">
                 <div class="bg-teal-50 border border-teal-200 rounded-full px-6 py-2 text-sm font-bold text-teal-800">10+ languages across the founding team</div>
                 <div class="bg-teal-50 border border-teal-200 rounded-full px-6 py-2 text-sm font-bold text-teal-800">2 decades of lived research friction</div>
                 <div class="bg-teal-50 border border-teal-200 rounded-full px-6 py-2 text-sm font-bold text-teal-800">Research · Product · AI — one complete team</div>
+            </div>
+
+            <!-- Founder-market fit: Thesis -> Publication -> Product -> Adoption -->
+            <div class="relative mb-14">
+                <p class="text-xs font-bold text-teal-600 uppercase tracking-widest mb-6 text-center">Founder-Market Fit</p>
+                <div class="hidden lg:block absolute left-0 right-0 h-0.5 bg-gradient-to-r from-teal-200 via-teal-500 to-teal-700 pointer-events-none" style="top: 46px;"></div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-600 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">01</span>
+                        </div>
+                        <div class="bg-white border border-stone-200 rounded-xl p-6 w-full shadow-sm hover:shadow-md transition-shadow flex-1">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">Thesis</h4>
+                            <p class="text-sm text-gray-600">Four graduate degrees across business, engineering, psychology and AI.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-600 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">02</span>
+                        </div>
+                        <div class="bg-white border border-stone-200 rounded-xl p-6 w-full shadow-sm hover:shadow-md transition-shadow flex-1">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">Publication</h4>
+                            <p class="text-sm text-gray-600">Published research shaped the problem from the inside.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-600 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">03</span>
+                        </div>
+                        <div class="bg-white border border-stone-200 rounded-xl p-6 w-full shadow-sm hover:shadow-md transition-shadow flex-1">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">Product</h4>
+                            <p class="text-sm text-gray-600">25,000+ researchers used what the team shipped.</p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div class="relative z-10 w-10 h-10 rounded-full bg-teal-700 border-4 border-stone-50 flex items-center justify-center mb-5 shadow-md flex-shrink-0">
+                            <span class="text-white font-extrabold text-xs">04</span>
+                        </div>
+                        <div class="bg-white border-2 border-teal-600 rounded-xl p-6 w-full shadow-md hover:shadow-lg transition-shadow flex-1">
+                            <h4 class="text-xl font-bold text-gray-800 mb-2">Adoption</h4>
+                            <p class="text-sm text-gray-600">Paid pilot, active pilots and institutional negotiations.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
